@@ -9,7 +9,7 @@ while True:
 	
 	if ret==False:
 		continue
-	faces= face_detector.detectMultiScale(img,1.1,5)
+	faces= face_detector.detectMultiScale(img,	,5)
 	for face in faces:
 		x,y,w,h = face
 		cv2.rectangle(img,(x,y),(x+w,y+h),(0,255,0),5)
